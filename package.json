@@ -1,0 +1,14 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run start:insert 1000",
+    "start:insert": "cross-env NODE_ENV=production node -r dotenv/config app.js"
+  },
+  "dependencies": {
+    "cross-env": "^6.0.3",
+    "dotenv": "^8.2.0",
+    "faker": "^4.1.0",
+    "fecha": "^3.0.3",
+    "pg": "^7.12.1"
+  }
+}
