@@ -14,7 +14,7 @@ const config = require('./config')
   client = new Client({ ...config.postgres, database: 'postgres' })
 
   await client.connect()
-  await client.query(`CREATE DATABASE mydb`).catch(err => err)
+  await client.query(`CREATE DATABASE ${config.postgres.database}`).catch(err => err)
   await client.end()
 
   client = new Client(config.postgres)
