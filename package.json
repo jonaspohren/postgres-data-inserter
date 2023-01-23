@@ -2,13 +2,16 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn run start:insert 1000",
-    "start:insert": "cross-env NODE_ENV=production node -r dotenv/config app.js"
+    "start:insert": "cross-env NODE_ENV=production node -r dotenv/config app.mjs"
   },
   "dependencies": {
     "cross-env": "^6.0.3",
     "dotenv": "^8.2.0",
     "faker": "^4.1.0",
     "fecha": "^3.0.3",
-    "pg": "^7.12.1"
+    "pg": "^8.8.0"
+  },
+  "engines": {
+    "node": "16.15.0"
   }
 }
